@@ -70,12 +70,13 @@ margin: 0;
 }
 
 .nav-site .item {
-margin-left: 94px;
-margin-right: 9px;
+margin-left: 50px;
+margin-right: 50px;
 }
 
 .nav-site .item:last-child {
     margin-right: 0px;
+    margin-left: 0px;
 }
 
 .nav-site .link {
@@ -93,12 +94,20 @@ padding-bottom: 32px;
     
 }
 
-
+.container.contact-site {
+    display: flex;
+}
 
 .contact-site {
-    margin-left: auto;
-    display: flex;
+    margin: auto;
+}
 
+.contact-site.item {
+    display: flex;
+    margin-right: 20px;
+}
+.contact-site.item .item {
+    margin-right: 50px;
 }
 
 .contact-site .item + .item {
