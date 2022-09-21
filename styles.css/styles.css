@@ -1,0 +1,375 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color:  #212121;
+    --accent-color: #2196F3;
+    --logo-color:  black;
+    --primary-white-color: #FFFFFF;
+    --background-color: #2F303A;
+    --button-start-color: #F5F4FA;
+
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing:0.03em;
+    font-size: 14px;
+    margin: 0;
+    
+}
+
+
+.container {
+    width: 1200px;
+    outline: 2px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.logo {
+    color: var(--logo-color);
+    font-family: Raleway, cursive;
+    font-style: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    
+    
+}
+
+
+
+
+.list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+.nav-site {
+    display: flex;
+}
+
+.nav-site .item {
+margin-left: 94px;
+margin-right: 9px;
+}
+
+.nav-site .item:last-child {
+    margin-right: 0px;
+}
+
+.nav-site .link {
+display: block;
+ color: var(--title-text-color);
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+text-decoration: none;
+padding-top: 32px;
+padding-bottom: 32px;
+}
+.nav-site .link.current {
+    color: var(--accent-color);
+    
+}
+
+
+
+.contact-site {
+    margin-left: auto;
+    display: flex;
+
+}
+
+.contact-site .item + .item {
+    margin-left: 12px;
+}
+
+
+.contact-site .link {
+    color: var(--primary-text-color);
+    font-weight: normal;
+    font-style:normal;
+line-height: 1.14;
+letter-spacing: 0.02em;
+text-decoration: none;
+}
+.contact-site .link.weight {
+    font-weight: 500;
+}
+
+.link:hover ,
+.link:focus  {
+    color: var(--accent-color);
+}
+
+
+
+.logo-part {
+    color: var(--accent-color);
+}
+.section-title {
+    margin-top: 0;
+    margin-bottom: 94px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+text-align: center;
+}
+
+
+.title {
+    margin-bottom: 10;
+    margin-top: 0;
+}
+.title-text {
+    margin-top: 0;
+    margin-bottom: 94;
+    
+}
+
+.hero {
+    background-color: var(--background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+.hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
+    color: var(--primary-white-color); 
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+letter-spacing: 0.06em;
+
+}
+
+.section-title {
+    padding-top: 96px;
+}
+
+.feature-list {
+    display: flex;
+}
+
+.feature-list .item {
+    margin-left: 30px;
+}
+
+.feature-list .item:last-child {
+    margin-left: 0px;
+}
+
+.feature-list .title {
+ color: var(--title-text-color);
+ font-weight: 700;
+ line-height: 1.14;
+ font-size: 14px;
+ width: 270px;
+}
+.feature-list .title-text {
+    line-height: 1.71;
+}
+
+.stuff-list {
+    display: flex;
+    padding-bottom: 94px;
+}
+
+.stuff-list .item {
+margin-left: 30px;
+}
+
+.stuff-list .item:first-child {
+    margin-left: 0px;
+}
+
+
+
+
+
+.stuff-list .title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.12;
+    text-align: center;
+
+}
+.stuff-list .title-text {
+    
+    font-size: 16px;
+    line-height: 1.12;  
+    text-align: center;
+     
+}
+
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.button {
+    font-family: inherit;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    background-color: var(--button-start-color);
+    font-weight: 500;
+    font-size: 16px;
+     line-height: 1.63;
+    border: 1px solid transparent;
+    border-radius: 4px;
+        padding: 6px 22px;
+}
+
+.button-primery {
+    font-family: inherit;
+        cursor: pointer;
+        letter-spacing: 0.03em;
+        color: var(--primary-white-color);
+        background-color: var(--accent-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        border-radius: 6px;
+        padding: 10px 32px;
+        border: 1px var(--accent-color);
+        text-align: center;
+}
+
+.button:hover ,
+.button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.contact-site .link-adress {
+    color: var(--primary-white-color);
+    line-height: 1.71;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.contact-inform {
+    background-color: var(--background-color);
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.contact-inform .logo-white {
+    color: var(--primary-white-color);
+    text-decoration: none;
+}
+
+/*  portfolio */
+
+.gallery .work-list {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    }
+
+.gallery .gallery-text {
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+.gallery-list,
+.work-list,
+.gallery-text {
+    margin-top: 0;
+    margin-bottom: 94px;
+}
+
+.image {
+    margin-bottom: 20px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.work-list {
+    margin-bottom: 4px;
+    display: flex;
+    
+}
+
+.work-list .item {
+    margin-left: 30px;
+}
+
+.work-list .item:first-child {
+margin-left: 0px;    
+}
+
+.list-button {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 34px;
+}
+
+.list-button .item {
+    margin-left: 8px;
+}
+
+.list-button .item:first-child {
+    margin-left: 0px;
+}
+.gallery-text {
+    margin-bottom: 50px;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.portfolio .item {
+    margin-left: 20px;
+}
+
+.portfolio .item:first-child(3n) {
+    margin-left: 0px;
+}
+.contact-site .item.adress {
+    margin-bottom: 9px;
+    margin-top: 20px;
+}
+.contact-site .item.mail {
+    margin-bottom: 9px;
+} 
+
+.stuff-list .item {
+    border: 1px solid #757575;
+    border-radius: 4px;
+}
