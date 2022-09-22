@@ -36,6 +36,7 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+   
 }
 
 
@@ -47,8 +48,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    
-    
+
 }
 
 
@@ -60,16 +60,31 @@ padding: 0;
 margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+
+
+.nav-site {
+    display: flex;
+   margin-left: 50px;
+   
+}
+
 .main-nav {
     display: flex;
     align-items: center;
 }
-.nav-site {
-    display: flex;
-}
+
+
 
 .nav-site .item {
-margin-left: 50px;
 margin-right: 50px;
 }
 
@@ -78,23 +93,34 @@ margin-right: 50px;
     margin-left: 0px;
 }
 
+.contact-site.item .item:last-child {
+    margin-right: 0px;
+}
+
+.contact-site.item:last-child {
+    margin-right: 0px;
+}
+
 .nav-site .link {
 display: block;
- color: var(--title-text-color);
-font-weight: 500;
+font-weight: medium;
 line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
 padding-top: 32px;
 padding-bottom: 32px;
 }
+
+
+
 .nav-site .link.current {
-    color: var(--accent-color);
-    
+    color: var(--accent-color);  
 }
+
 
 .container.contact-site {
     display: flex;
+    align-items: center;
 }
 
 .contact-site {
@@ -103,27 +129,29 @@ padding-bottom: 32px;
 
 .contact-site.item {
     display: flex;
-    margin-right: 20px;
+    margin-left: auto;
 }
+
 .contact-site.item .item {
     margin-right: 50px;
 }
 
-.contact-site .item + .item {
-    margin-left: 12px;
-}
+
 
 
 .contact-site .link {
-    color: var(--primary-text-color);
-    font-weight: normal;
+    color: var(--title-text-color);
+    font-weight: 500;
     font-style:normal;
 line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
 }
+
+
 .contact-site .link.weight {
     font-weight: 500;
+    color: var(--primary-text-color);
 }
 
 .link:hover ,
@@ -136,9 +164,33 @@ text-decoration: none;
 .logo-part {
     color: var(--accent-color);
 }
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-title {
     margin-top: 0;
-    margin-bottom: 94px;
+    margin-bottom: 50px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+text-align: center;
+}
+ .section-title-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -147,13 +199,17 @@ text-align: center;
 }
 
 
+ .page-header {
+    border-bottom: 2px solid #ECECEC;
+ }
+
 .title {
-    margin-bottom: 10;
+    margin-bottom: 10px;
     margin-top: 0;
 }
 .title-text {
     margin-top: 0;
-    margin-bottom: 94;
+    
     
 }
 
@@ -178,9 +234,6 @@ letter-spacing: 0.06em;
 
 }
 
-.section-title {
-    padding-top: 96px;
-}
 
 .feature-list {
     display: flex;
@@ -190,7 +243,7 @@ letter-spacing: 0.06em;
     margin-left: 30px;
 }
 
-.feature-list .item:last-child {
+.feature-list .item:first-child {
     margin-left: 0px;
 }
 
@@ -207,7 +260,6 @@ letter-spacing: 0.06em;
 
 .stuff-list {
     display: flex;
-    padding-bottom: 94px;
 }
 
 .stuff-list .item {
@@ -218,7 +270,10 @@ margin-left: 30px;
     margin-left: 0px;
 }
 
-
+.section.stuff {
+    background-color: var(--button-start-color);
+    
+}
 
 
 
@@ -270,6 +325,23 @@ margin-left: 30px;
         padding: 10px 32px;
         border: 1px var(--accent-color);
         text-align: center;
+        min-width: 216px;
+}
+
+.button-primery-one {
+    font-family: inherit;
+        cursor: pointer;
+        letter-spacing: 0.03em;
+        color: var(--primary-white-color);
+        background-color: var(--accent-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        border-radius: 6px;
+        padding: 10px 32px;
+        border: 1px var(--accent-color);
+        text-align: center;
+       
 }
 
 .button:hover ,
@@ -277,6 +349,16 @@ margin-left: 30px;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
+
+.button-primery:hover ,
+.button-primery:focus {
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);
+}
+
+.contact {
+    margin-top: 20px;
+} 
 
 .contact-site .link-adress {
     color: var(--primary-white-color);
@@ -296,6 +378,8 @@ margin-left: 30px;
     text-decoration: none;
 }
 
+
+
 /*  portfolio */
 
 .gallery .work-list {
@@ -311,24 +395,40 @@ margin-left: 30px;
     line-height: 1.87;
 }
 
+.gallery-list-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      
+}
+
 .gallery-list,
 .work-list,
 .gallery-text {
     margin-top: 0;
-    margin-bottom: 94px;
 }
 
 .image {
-    margin-bottom: 20px;
     display: block;
     max-width: 100%;
     height: auto;
 }
 
 .work-list {
-    margin-bottom: 4px;
     display: flex;
-    
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 .work-list .item {
@@ -343,7 +443,7 @@ margin-left: 0px;
     display: flex;
    justify-content: center;
    align-items: center;
-   margin-bottom: 34px;
+   margin-bottom: 50px;
 }
 
 .list-button .item {
@@ -353,31 +453,43 @@ margin-left: 0px;
 .list-button .item:first-child {
     margin-left: 0px;
 }
-.gallery-text {
-    margin-bottom: 50px;
-}
+
 
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    
-}
-.portfolio .item {
-    margin-left: 20px;
+    gap: 30px;
 }
 
-.portfolio .item:first-child(3n) {
-    margin-left: 0px;
-}
-.contact-site .item.adress {
-    margin-bottom: 9px;
-    margin-top: 20px;
-}
-.contact-site .item.mail {
-    margin-bottom: 9px;
-} 
 
-.stuff-list .item {
-    border: 1px solid #757575;
-    border-radius: 4px;
+
+
+ .box-list {
+border-bottom: 2px solid #EEEEEE;
+border-left:  2px solid #EEEEEE;
+border-right:  2px solid #EEEEEE;
+padding-left: 50px;
+padding-top: 30px;
+padding-right: 50px;
+padding-bottom: 30px;
+background-color: var(--primary-white-color);
 }
+
+.box-list-portfolio {
+ border-bottom: 2px solid #EEEEEE;
+border-left:  2px solid #EEEEEE;
+border-right:  2px solid #EEEEEE;
+padding-left: 24px;
+padding-right: 24px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.contact-site .item-street {
+    margin-bottom: 9px;
+}
+
+.contact-site .item-mail {
+    margin-bottom: 9px;
+}
+ 
